@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(183, 222, 209);
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(3, 42, 77);
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+form {
+    display: block;
+    padding-left: 3rem;
+    line-height: 3rem;
+
+}
+
+input {
+    width:auto;
+    height: 20px;
+    font-size: 1rem;
+}
+
+input:hover {
+    background-color: rgb(238, 244, 233);
+}
+
+input:focus {
+    font-size: 20px;
+}
+
+::placeholder {
+    font-size: 1em;
+}
+
+.form__radio {
+    height: 1rem;
+    width: 1rem;
+}
+
+select {
+    font-size: 1rem;
+
+}
+
+.error {
+    color: red;
+    font-size: smaller;
+    font-style: italic;
+    display: none;
+}
+
+.agreement {
+    height: 1rem;
+    width: 1rem;
+}
+
+.form__submit {
+    height: 40px;
+    font-size: 1em;
+    font-weight: bold;
+    color: rgb(3, 42, 77);
+    border: 3px solid rgb(3, 42, 7);
+    border-radius: 5%;
+    background-color:rgb(96, 217, 177);
+    margin-top: 2rem;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации с валидацией всех полей</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Регистрационная форма</h1>
+		<form name="form" class="form">
+
+			<label for="name" class="form__label">Имя:</label>
+			<input type="text" id="name" name="name" placeholder="Введите свое имя" minlength="2" maxlength="20" required/>
+            <span class="error" id="nameError"></span>
+            <br>
+
+            <label for="email" class="form__label">Адрес электронной почты:</label>
+            <input type="email" id="email" name="email" placeholder="Введите e-mail" required/>
+			<span class="error" id="emailError"></span>
+            <br />
+
+            <label for="age" class="form__label">Возраст:</label>
+            <input type="number" id="age" name="age" placeholder="Укажите свой возраст" required/>
+            <span class="error" id="ageError"></span>
+			<br />
+
+            <label class="form__label">Укажите свой пол:</label>
+
+				<input type="radio" id="radioOne" name="gender" class="form__radio" />
+				<label for="radioOne">Женщина</label>
+						
+                <input type="radio" id="radioTwo" name="gender" class="form__radio" />
+				<label for="radioTwo">Мужчина</label>
+
+                <span class="error" id="genderError"></span>
+			<br />
+            
+            
+            <label for="select" class="form__label">Укажите свою профессию:</label>
+			<select id="job" name="job" class="form__select" required>/
+				<option value="Опция 1">Врач</option>
+				<option value="Опция 2">Программист</option>
+				<option value="Опция 3">Учитель</option>
+                <option value="Опция 4">Дизайнер</option>
+				<option value="Опция 5">Инженер</option>
+				<option value="Опция 6">Продавец</option>
+                <option value="Опция 7">Другое</option>
+            </select>
+			<br />
+            
+            <label for="password" class="form__label">Пароль:</label>
+            <input type="password" id="password" name="password" placeholder="Задайте пароль:" minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*$" required/>
+            <span class="error" id="passwordError"></span>
+            <br />
+            
+            <label for="agreement" class="form__label">Я согласен на обработку персональных данных.</label>
+            <input type="checkbox" id="agreement" name="agreement" class="agreement" required/>
+            <span class="error" id="termsError"></span>
+            <br />
+
+            <input name="button" type="submit" id="submit" value="Отправить" class="form__submit" disabled/>
+
+        </form>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
